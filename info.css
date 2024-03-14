@@ -50,6 +50,16 @@ h1, h2, h3 {
 #navbar ul li a:hover, .current{
     background:#52a036;
 }
+.dropdown{
+    background:#478033;
+    height: 3.5em;
+}
+#navENG,#navUA {
+    display: none;
+}
+.manENG,.manUA {
+    display:none;
+}
 h1{
     font-size:8em;
     text-align: center;
