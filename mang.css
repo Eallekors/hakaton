@@ -57,7 +57,8 @@ h1, h2, h3 {
 /*styling for anchor links in list items in unordered lists in navbar id*/
 #navbar ul li a{
     display:block;
-    padding:1.25em;
+    padding-top:1em;
+    padding-right: 0.5rem;
     text-align:center;
 }
 /*styling for anchor links in hover in list items in unordered lists in navbar id and the current class*/
@@ -84,10 +85,12 @@ footer{
     background:#36ABB2;
     height: 3.5em;
 }
-#navENG {
+#navENG,#navUA {
     display: none;
 }
-
+.manENG,.manUA {
+    display:none;
+}
 /* Mobile view*/
 @media (max-width: 1250px) {
     #clue {
@@ -107,4 +110,25 @@ footer{
    #mobileClue{
         display: none;
    }
+}
+.popup {
+    display: none;
+    position: absolute;
+    bottom: 100%; /* Position above the footer */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #36ABB2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.popup-content {
+    font-size: 14px;
+}
+
+#footer {
+    position: relative;
+    cursor: pointer;
 }
