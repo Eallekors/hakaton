@@ -120,12 +120,12 @@ footer{
     width: 20vw;
     margin: 0 40% 0 40%;
 }
-#rules{
+#rules, #rulesENG, #rulesUA{
     display: none;
     margin: 5vh 25% 5vh 25%;
     padding-bottom: 4vh;
 }
-#rules ol{
+#rules ol, #rulesENG ol, #rulesUA ol{
     padding-left: 2em;
 }
 #rules-btn{
