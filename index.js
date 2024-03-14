@@ -42,7 +42,17 @@ function input(x, ansId, outID ,number , mob){
   let result = text1.localeCompare(x);
 
   if (result == 0) {
+    var current = document.getElementById('activeDrop').innerHTML; 
+    if (current == 'EE'){
+      document.getElementById(outID).innerHTML = "Murdsid parooli. Parool oli " + document.getElementById(ansId).innerHTML;
+  } else if (current == 'ENG'){
+    document.getElementById(outID).innerHTML = "You broke the password. The password was " + document.getElementById(ansId).innerHTML;
+  }else if (current == 'UA'){
+    document.getElementById(outID).innerHTML = "ukra " + document.getElementById(ansId).innerHTML;
+  } else {
     document.getElementById(outID).innerHTML = "Murdsid parooli. Parool oli " + document.getElementById(ansId).innerHTML;
+  }
+    
     changePic("lukk"+number);
     if(mob == 'mob1'){
       changeCSSAfterDelay('mob1', 'mob2');
@@ -55,7 +65,17 @@ function input(x, ansId, outID ,number , mob){
     }
 
   } else {
+    
+    var current = document.getElementById('activeDrop').innerHTML; 
+    if (current == 'EE'){
     document.getElementById(outID).innerHTML = "Ei sisestanud õiget parooli";
+  } else if (current == 'ENG'){
+    document.getElementById(outID).innerHTML = "You entered the wrong password";
+  }else if (current == 'UA'){
+    document.getElementById(outID).innerHTML = "ua";
+  } else {
+    document.getElementById(outID).innerHTML = "Ei sisestanud õiget parooli";
+  }
   }}
 
   var form = document.getElementById("frm1");
@@ -93,7 +113,7 @@ function input(x, ansId, outID ,number , mob){
     }
 
     if (x == 'lukk5' || x == 'lukk6'){
-      document.getElementById(x).src='./img/shady_dude.png';
+      document.getElementById(x).src='./img/shady_dude_2.png';
     }
   }
 
@@ -118,21 +138,66 @@ function language(cur) {
     if (cur == 'EE'){
       document.getElementById("navEE").style.display = 'block';
       document.getElementById("navENG").style.display = 'none';
-      changeActive('#EE')
+      document.getElementById("navUA").style.display = 'none';
+      console.log(document.getElementsByClassName("manEE")[1])
+      var x = document.getElementsByClassName("manEE");
+      var i;
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = 'block';
+      }
+      var y = document.getElementsByClassName("manENG");
+      var i;
+      for (i = 0; i < y.length; i++) {
+          y[i].style.display = 'none';
+      }
+      var z = document.getElementsByClassName("manUA");
+      var i;
+      for (i = 0; i < z.length; i++) {
+          z[i].style.display = 'none';
+      }
     }
-    else{
+    else if(cur == 'ENG'){
       document.getElementById("navEE").style.display = 'none';
       document.getElementById("navENG").style.display = 'block';
-      changeActive('#ENG')
+      document.getElementById("navUA").style.display = 'none';
+
+
+      var x = document.getElementsByClassName("manEE");
+      var i;
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = 'none';
+      }
+      var y = document.getElementsByClassName("manENG");
+      var i;
+      for (i = 0; i < y.length; i++) {
+          y[i].style.display = 'block';
+      }
+      var z = document.getElementsByClassName("manUA");
+      var i;
+      for (i = 0; i < z.length; i++) {
+          z[i].style.display = 'none';
+      }
+    }else{
+      document.getElementById("navEE").style.display = 'none';
+      document.getElementById("navENG").style.display = 'none';
+      document.getElementById("navUA").style.display = 'block';
+
+      var x = document.getElementsByClassName("manEE");
+      var i;
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = 'none';
+      }
+      var y = document.getElementsByClassName("manENG");
+      var i;
+      for (i = 0; i < y.length; i++) {
+          y[i].style.display = 'none';
+      }
+      var z = document.getElementsByClassName("manUA");
+      var i;
+      for (i = 0; i < z.length; i++) {
+          z[i].style.display = 'block';
+      }
     }
   }else return
 }
 
-function changeActive(x){
-
-  var element = document.querySelector(x);
-  //console.log(element)
-  element.classList.replace("dropdown-item active", "dropdown-item");
- /* var element = document.querySelector(y);
-  element.classList.replace("dropdown-item active", "dropdown-item");*/
-}
