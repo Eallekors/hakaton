@@ -14,11 +14,11 @@ h1, h2, h3 {
 }
 /*styling for navbar id*/
 #navbar{
-    background:#478033;
+    background:#3780d6;
     color:#f0f0f0;
     overflow:auto;
     position: sticky;
-    max-height: 3.5em;
+    max-height: 4.5em;
 }
 /*styling for anchors in navbar id*/
 #navbar a{
@@ -29,6 +29,7 @@ h1, h2, h3 {
 #navbar img{
     float:left;
     max-height: 3.5em;
+    padding: 0.5em;
 }
 /*styling for unordered lists in navbar id*/
 #navbar ul {
@@ -48,10 +49,10 @@ h1, h2, h3 {
 }
 /*styling for anchor links in hover in list items in unordered lists in navbar id and the current class*/
 #navbar ul li a:hover, .current{
-    background:#52a036;
+    background:#80a7d6;
 }
 h1{
-    font-size:8em;
+    font-size:5em;
     text-align: center;
     padding: 2.5vh 10% 2.5vh 10%;
 }
@@ -63,18 +64,18 @@ h1{
     text-align: left;
 }
 .alt-color{
-    background: #52a036;
+    background: #3780d6;
     color: #f0f0f0;
 }
 .password-tips p, .password-tips h2, .password-tips h3{
     padding: 2.5vh 10% 2.5vh 10%;
 }
 .password-tips h3{
-    font-size: 2vh;
+    font-weight: bold;
 }
 .password-tips h2{
-    color: black;
     font-size: 2.5vh;
+    font-weight: normal;
 }
 #hamburger-menu{
     display: none;
@@ -95,7 +96,7 @@ h1{
     min-height: 100vh;
 }
 footer{
-    background: #478033;
+    background: #3780d6;
     text-align: center;
     padding: 1vh;
     color: #f3fafc;
@@ -104,10 +105,10 @@ footer{
     text-decoration: underline;
 }
 #copyright:hover{
-    color: #52a036;
+    color: #80a7d6;
 }
 @media screen and (min-width: 501px) and (max-width: 1024px) {
     h1{
-        font-size: 13vw;
+        font-size: 8vw;
     }
 }

@@ -7,13 +7,12 @@ body{
     font-size: 1.5vh;
 }
 #main-char{
-    margin-top: 0;
     margin-right: inherit;
     margin-bottom: 5vh;
     margin-left: inherit;
     max-width: 100%;
 }
-#main-char-intro{
+#main-char-intro, #rules{
     margin: 5vh 10% 5vh 10%;
 }
 #play-btn, #rules-btn{

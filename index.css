@@ -19,7 +19,7 @@ h1, h2, h3 {
     color:#f0f0f0;
     overflow:hidden;
     position: relative;
-    max-height: 3.5em;
+    max-height: 4.5em;
 }
 /*styling for anchors in navbar id*/
 #navbar a{
@@ -30,6 +30,7 @@ h1, h2, h3 {
 #navbar img{
     float:left;
     height: 3.5em;
+    padding: 0.5em;
 }
 /*styling for unordered lists in navbar id*/
 #navbar ul {
@@ -68,7 +69,7 @@ h1, h2, h3 {
 #play-btn, #rules-btn{
     display: block;
     margin: 2vh auto 2vh auto;
-    background: #3780d6;
+    background: #3780D6;
     color:#f0f0f0;
     border-radius: 10px;
     width: 10vw;
@@ -101,7 +102,7 @@ footer{
 #authors{
     display: none;
     border-style: double;
-    border-color: #80a7d6;
+    border-color: #3780d6;
     border-radius: 20px;
     color: black;
     text-align: center;
@@ -110,6 +111,11 @@ footer{
 }
 #rules{
     display: none;
+    margin: 5vh 25% 5vh 25%;
+    padding-bottom: 4vh;
+}
+#rules ol{
+    padding-left: 2em;
 }
 #rules-btn{
     border: none;
@@ -127,7 +133,7 @@ footer{
         padding-top: 0;
     }
     #play-btn:hover, #rules-btn:hover{
-        width: 14.5vw;
+        width: 24.5vw;
         height: 5.5vh;
     }
 }
