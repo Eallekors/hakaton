@@ -4,6 +4,9 @@ body {
     color: #000000;
     font-family: 'Lexend Deca', sans-serif;
 }
+#myBtn {
+    margin-top: 10px;
+} 
 h1, h2, h3 {
     font-family: 'Lexend Zetta', sans-serif;
 }
@@ -28,11 +31,11 @@ h1, h2, h3 {
 } 
 /*styling for navbar id*/
 #navbar{
-    background:#36ABB2;
+    background:#3780d6;
     color:#f0f0f0;
     overflow:hidden;
     position: relative;
-    max-height: 3.5em;
+    height: 4.5em;
 }
 /*styling for anchors in navbar id*/
 #navbar a{
@@ -43,6 +46,8 @@ h1, h2, h3 {
 #navbar img{
     float:left;
     height: 3.5em;
+    margin: 0.5em;
+    padding-left: 1em;
 }
 /*styling for unordered lists in navbar id*/
 #navbar ul {
@@ -57,21 +62,18 @@ h1, h2, h3 {
 /*styling for anchor links in list items in unordered lists in navbar id*/
 #navbar ul li a{
     display:block;
-    padding-top:1em;
-    padding-right: 0.25rem;
-    padding-left: 0.25rem;
-    padding-bottom:1em;
+    padding:1.5em;
     text-align:center;
 }
 /*styling for anchor links in hover in list items in unordered lists in navbar id and the current class*/
 #navbar ul li a:hover, .current{
-    background:#74D9DF;
+    background:#80a7d6;
 }
 #main-content{
     min-height: 100vh;
 }
 footer{
-    background: #36ABB2;
+    background: #3780d6;
     text-align: center;
     padding: 1vh;
     color: #f3fafc;
@@ -80,12 +82,12 @@ footer{
     text-decoration: underline;
 }
 #copyright:hover{
-    color: #74D9DF;
+    color: #80a7d6;
 }
 
 .dropdown{
-    background:#36ABB2;
-    height: 3.5em;
+    background:#3780d6;
+    height: 4.5em;
 }
 #navENG,#navUA {
     display: none;
@@ -112,6 +114,8 @@ footer{
    #mobileClue{
         display: none;
    }
+   
+
 }
 .popup {
     display: none;
@@ -119,7 +123,7 @@ footer{
     bottom: 100%; /* Position above the footer */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #36ABB2;
+    background-color: #3780d6;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 5px;

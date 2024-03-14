@@ -9,16 +9,14 @@ body{
     color: #000000;
     font-family: 'Lexend Deca', sans-serif;
 }
-h1, h2, h3 {
-    font-family: 'Lexend Zetta', sans-serif;
-}
+
 /*styling for navbar id*/
 #navbar{
-    background:#478033;
+    background:#3780d6;
     color:#f0f0f0;
-    overflow:auto;
+    overflow:hidden;
     position: sticky;
-    max-height: 3.5em;
+    height: 4.5em;
 }
 /*styling for anchors in navbar id*/
 #navbar a{
@@ -28,7 +26,9 @@ h1, h2, h3 {
 /*navbar id heading styling*/
 #navbar img{
     float:left;
-    max-height: 3.5em;
+    height: 3.5em;
+    margin: 0.5em;
+    padding-left: 1em;
 }
 /*styling for unordered lists in navbar id*/
 #navbar ul {
@@ -43,16 +43,16 @@ h1, h2, h3 {
 /*styling for anchor links in list items in unordered lists in navbar id*/
 #navbar ul li a{
     display:block;
-    padding:1em;
+    padding:1.5em;
     text-align:center;
 }
 /*styling for anchor links in hover in list items in unordered lists in navbar id and the current class*/
 #navbar ul li a:hover, .current{
-    background:#52a036;
+    background:#80a7d6;
 }
 .dropdown{
-    background:#478033;
-    height: 3.5em;
+    background:#3780d6;
+    height: 4.5em;
 }
 #navENG,#navUA {
     display: none;
@@ -61,30 +61,34 @@ h1, h2, h3 {
     display:none;
 }
 h1{
-    font-size:8em;
+    font-size:5em;
     text-align: center;
     padding: 2.5vh 10% 2.5vh 10%;
 }
 .container{
-    margin: 5vh 10% 5vh 10%;
-
+    margin: 5vh 15% 5vh 15%;
+    width: 70%;
 }
 .password-tips {
     text-align: left;
 }
 .alt-color{
-    background: #52a036;
+    background: #3780d6;
     color: #f0f0f0;
 }
 .password-tips p, .password-tips h2, .password-tips h3{
-    padding: 2.5vh 10% 2.5vh 10%;
+    padding: 1vh;
 }
-.password-tips h3{
-    font-size: 2vh;
+.title{
+    font-weight: 800;
+    font-size: 1.5vh;
+}
+.password-tips p{
+    margin-left:15px;
 }
 .password-tips h2{
-    color: black;
     font-size: 2.5vh;
+    font-weight: 1000;
 }
 #hamburger-menu{
     display: none;
@@ -105,7 +109,7 @@ h1{
     min-height: 100vh;
 }
 footer{
-    background: #478033;
+    background: #3780d6;
     text-align: center;
     padding: 1vh;
     color: #f3fafc;
@@ -114,15 +118,15 @@ footer{
     text-decoration: underline;
 }
 #copyright:hover{
-    color: #52a036;
+    color: #80a7d6;
 }
-.popup {
+.popup{
     display: none;
     position: absolute;
     bottom: 100%; /* Position above the footer */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #478033;
+    background-color: #3780d6;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 5px;
@@ -139,6 +143,6 @@ footer{
 }
 @media screen and (min-width: 501px) and (max-width: 1024px) {
     h1{
-        font-size: 13vw;
+        font-size: 8vw;
     }
 }
