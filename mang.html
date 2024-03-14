@@ -14,18 +14,18 @@
 </head>
   <body>
   <div id="main-content">
-    <header>
-        <div class="dropdown" style="float: right;">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="activeDrop">
-              EE
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item active" href="javascript:language('EE')">EE</a></li>
-              <li><a class="dropdown-item" href="javascript:language('ENG')">ENG</a></li>
-             
-            </ul>
-          </div>
+    <header>     
         <div id="navEE">
+            <div class="dropdown" style="float: right;">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="activeDrop">
+                  EE
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item active" href="javascript:language('EE')">EE</a></li>
+                  <li><a class="dropdown-item" href="javascript:language('ENG')">ENG</a></li>
+                  <li><a class="dropdown-item" href="javascript:language('UA')">UA</a></li>
+                </ul>
+              </div>
         <nav id="navbar">
                 <!--add logo-->
             <!--
@@ -56,6 +56,16 @@
         </nav>
     </div>
     <div id="navENG">
+        <div class="dropdown" style="float: right;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="activeDrop">
+              ENG
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item " href="javascript:language('EE')">EE</a></li>
+              <li><a class="dropdown-item active" href="javascript:language('ENG')">ENG</a></li>
+              <li><a class="dropdown-item" href="javascript:language('UA')">UA</a></li>
+            </ul>
+          </div>
         <nav id="navbar">
                 <!--add logo-->
             <!--
@@ -80,6 +90,41 @@
             </div>
         </nav>
     </div>
+    <div id="navUA">
+        <div class="dropdown" style="float: right;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="activeDrop">
+              UA
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item " href="javascript:language('EE')">EE</a></li>
+              <li><a class="dropdown-item " href="javascript:language('ENG')">ENG</a></li>
+              <li><a class="dropdown-item active" href="javascript:language('UA')">UA</a></li>
+            </ul>
+          </div>
+        <nav id="navbar">
+                <!--add logo-->
+            <!--
+            get mobile navbar working properly
+            -->
+            <a href="index.html"><img src="https://picsum.photos/80" id="logo"></a>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()" id="hamburger-menu">
+                <i class="fa-solid fa-bars fa-xl" ></i>
+            </a>
+            <div id="nav-buttons">
+            <ul>
+                <li>
+                    <a href="index.html">UK Homepage</a>
+                </li>
+                <li>
+                    <a href="info.html">Password ABC</a>
+                </li>
+                <li>
+                   
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </div>
     </header>
     <!-- level 1-->
     <div id="clue" class="container justify-content-center">
@@ -92,10 +137,30 @@
                 </div>
             </div>
             <div class="col-md-6">
+                <div class="manEE">
                 <p>Martin on 10-aastane rõõmsameelne poiss, kellel peagi on algamas koolivaheaeg. Koolivaheajal soovib ta ennast täielikult pühendada oma lemmik online mängude mängimisele. Kahjuks on ta unustanud oma konto parooli ja platvorm, millel ta mängib on üks väheseid, mis parooli unustamise korral seda taastada ei luba. Aita Martinil veeta saabuv vaheaeg rõõmsalt ja lõbusalt - tuvasta tema parool!</p>
-                
+                </div>
+                <div class="manENG">
+                    <p>Martin is a cheerful 10-year-old boy who's school break is starting soon.
+                        During the break, he wants to fully dedicate himself to playing his favorite online games. 
+                        Unfortunately, he has forgotten the password to his account
+                        and the platform he plays on is one of the few that does not provide password recovery in case of forgetting it. 
+                        Help Martin spend the upcoming break with happiness and joy - crack his password!
+                        </p>
+                </div>
+                <div class="manUA">
+                    <p>UKRAINE</p>
+                </div>
                     <form id="frm1" onSubmit="return getinPu('frm1', 'ans1', 'demo1')" >
+                    <div class="manEE">
                       <label for="fname">Sisestage parool:</label><br>
+                    </div>
+                    <div class="manENG">
+                        <label for="fname">Enter the password:</label><br>
+                    </div>
+                    <div class="manUA">
+                        <label for="fname">Enter the password:</label><br>
+                      </div>
                       <input id="myInput1" type="text" name="fname" value="" /><br>
                     </form> 
                     <button id="myBtn" onclick="getinPu('frm1', 'ans1', 'demo1')">Check</button>
@@ -131,10 +196,30 @@
         </div>
         
             <div class="col-md-6">
-                <p>Martin on 10-aastane rõõmsameelne poiss, kellel peagi on algamas koolivaheaeg. Koolivaheajal soovib ta ennast täielikult pühendada oma lemmik online mängude mängimisele. Kahjuks on ta unustanud oma konto parooli ja platvorm, millel ta mängib on üks väheseid, mis parooli unustamise korral seda taastada ei luba. Aita Martinil veeta saabuv vaheaeg rõõmsalt ja lõbusalt - tuvasta tema parool!</p>
-                
+                <div class="manEE">
+                    <p>Martin on 10-aastane rõõmsameelne poiss, kellel peagi on algamas koolivaheaeg. Koolivaheajal soovib ta ennast täielikult pühendada oma lemmik online mängude mängimisele. Kahjuks on ta unustanud oma konto parooli ja platvorm, millel ta mängib on üks väheseid, mis parooli unustamise korral seda taastada ei luba. Aita Martinil veeta saabuv vaheaeg rõõmsalt ja lõbusalt - tuvasta tema parool!</p>
+                    </div>
+                    <div class="manENG">
+                        <p>Martin is a cheerful 10-year-old boy who's school break is starting soon.
+                            During the break, he wants to fully dedicate himself to playing his favorite online games. 
+                            Unfortunately, he has forgotten the password to his account
+                            and the platform he plays on is one of the few that does not provide password recovery in case of forgetting it. 
+                            Help Martin spend the upcoming break with happiness and joy - crack his password!
+                            </p>
+                    </div>
+                    <div class="manUA">
+                        <p>UKRAINE</p>
+                    </div>
                     <form id="fm2" onSubmit="return getinPu('fm2', 'ans2', 'demo2')" >
-                      <label for="fname">Sisestage parool:</label><br>
+                        <div class="manEE">
+                            <label for="fname">Sisestage parool:</label><br>
+                          </div>
+                          <div class="manENG">
+                              <label for="fname">Enter the password:</label><br>
+                          </div>
+                          <div class="manUA">
+                            <label for="fname">Enter the password:</label><br>
+                          </div>
                       <input id="myInput2" type="text"  value="" /><br>
                     </form> 
                     <button id="myBtn" onclick="getinPu('fm2', 'ans2', 'demo2','mob1')">Check</button>
@@ -158,11 +243,35 @@
                 </div>
             </div>
             <div class="col-md-6">
+                <div class="manEE">
                 <p>Anette on 14-aastane tüdruk, kellele vanaema jättis enne surma oma sülearvutisse hinnalise varanduse. Kahjuks suri vanaema enneaegselt ega jõudnud Anettele öelda oma sülearvuti parooli. Ta jõudis vaid kunagi varem mainida, et hoiab sülearvutis Anette jaoks erilisi asju (parooli äraarvamisel võiks selguda, et need on vanaema retseptid ja fotod koosveedetud ajast). Vanaema kutsus Anettet tihti oma kalleimaks varaks. Aita Anettel tuvastada tema kadunud vanaema sülearvuti parool.
                 </p>
-                
+                </div>
+                <div class="manENG">
+                    <p>
+                        Anette is a 14-year-old girl, 
+                        to whom her grandmother left treasured information stored in her laptop before passing away. 
+                        Unfortunately, her grandmother died prematurely and did not have the chance to tell Anette the password to her laptop. 
+                        She had only managed to mention ahead of time that she keeps special things just for Anette on her laptop. 
+                        Anette's grandmother often referred to her as her most valued treasure. 
+                        Help Anette identify her lost grandmother's laptop password. 
+                    </p>
+                </div>
+                <div class="manUA">
+                    <p>
+                        ua
+                    </p>
+                </div>
                     <form id="frm3" onSubmit="return getinPu('frm3', 'ans3', 'demo3')" >
+                    <div class="manEE">
                       <label for="fname">Sisestage parool:</label><br>
+                    </div>
+                    <div class="manENG">
+                        <label for="fname">Enter the password: </label><br>
+                    </div>
+                    <div class="manUA">
+                        <label for="fname">ua:</label><br>
+                    </div>
                       <input id="myInput3" type="text" name="fname" value="" /><br>
                     </form> 
                     <button id="myBtn" onclick="getinPu('frm3', 'ans3', 'demo3')">Check</button>
@@ -198,10 +307,35 @@
         </div>
         
             <div class="col-md-6">
-                <p>Anette on 14-aastane tüdruk, kellele vanaema jättis enne surma oma sülearvutisse hinnalise varanduse. Kahjuks suri vanaema enneaegselt ega jõudnud Anettele öelda oma sülearvuti parooli. Ta jõudis vaid kunagi varem mainida, et hoiab sülearvutis Anette jaoks erilisi asju (parooli äraarvamisel võiks selguda, et need on vanaema retseptid ja fotod koosveedetud ajast). Vanaema kutsus Anettet tihti oma kalleimaks varaks. Aita Anettel tuvastada tema kadunud vanaema sülearvuti parool.</p>
-                
+                <div class="manEE">
+                    <p>Anette on 14-aastane tüdruk, kellele vanaema jättis enne surma oma sülearvutisse hinnalise varanduse. Kahjuks suri vanaema enneaegselt ega jõudnud Anettele öelda oma sülearvuti parooli. Ta jõudis vaid kunagi varem mainida, et hoiab sülearvutis Anette jaoks erilisi asju (parooli äraarvamisel võiks selguda, et need on vanaema retseptid ja fotod koosveedetud ajast). Vanaema kutsus Anettet tihti oma kalleimaks varaks. Aita Anettel tuvastada tema kadunud vanaema sülearvuti parool.
+                    </p>
+                    </div>
+                    <div class="manENG">
+                        <p>
+                            Anette is a 14-year-old girl, 
+                            to whom her grandmother left treasured information stored in her laptop before passing away. 
+                            Unfortunately, her grandmother died prematurely and did not have the chance to tell Anette the password to her laptop. 
+                            She had only managed to mention ahead of time that she keeps special things just for Anette on her laptop. 
+                            Anette's grandmother often referred to her as her most valued treasure. 
+                            Help Anette identify her lost grandmother's laptop password. 
+                        </p>
+                    </div>
+                    <div class="manUA">
+                        <p>
+                            ua
+                        </p>
+                    </div>
                     <form id="fm4" onSubmit="return getinPu('fm4', 'ans4', 'demo4')" >
-                      <label for="fname">Sisestage parool:</label><br>
+                        <div class="manEE">
+                            <label for="fname">Sisestage parool:</label><br>
+                          </div>
+                          <div class="manENG">
+                              <label for="fname">Enter the password: </label><br>
+                          </div>
+                          <div class="manUA">
+                              <label for="fname">ua:</label><br>
+                          </div>
                       <input id="myInput4" type="text"  value="" /><br>
                     </form> 
                     <button id="myBtn" onclick="getinPu('fm4', 'ans4', 'demo4','mob2')">Check</button>
@@ -220,15 +354,42 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="image-container justify-content-center">
-                    <img src="./img/shady_dude_2.png" class="img-fluid">
+                    <img src="./img/shady_dude.png" class="img-fluid">
                     <img src="./img/Võti3.png" class="key" id="keyImage3" onmouseover="toggleHint('level3')">
                 </div>
             </div>
             <div class="col-md-6">
+                <div class="manEE">
                 <p>Peeter on mees, kes sooviks omada Aston Martini, seigelda ümber maailma ja elada spioonile sarnast seiklusrikast elu. Paraku on Peeter aga  on laisavõitu ja kipub elus minema alati lihtsama valiku teed - ka siis kui see tähendab kellegi petmist. Hiljuti on ta kuidagi enda valdusse saanud faili, mis sisaldab delikaatset teavet tuhandete Eesti inimeste pangakontode kohta (kasutajanimed, paroolid ID-kaartide PIN-koodid). Tema telefon, mis sisaldas originaalfaili on küll konfiskeeritud ja hävitatud, kuid koopia failist oli salvestatud lisaks telefonile ka Peetri pilvepõhisele kontole ning tuleb kustutada enne kui Peeter kellelegi reaalset kahju jõuab teha. Hetkel on teada, et Peetri konto kasutajanimi on „pets”, aga teadmata on tema parool. Tuvasta Peetri parool ja aita vältida kahju tuhandete Eesti inimeste rahakottidele.</p>
-                
-                    <form id="frm5" onSubmit="return getinPu('frm5', 'ans5', 'demo5')" >
-                      <label for="fname">Sisestage parool:</label><br>
+                </div>
+                <div class="manENG">
+                    <p>
+                        Meet Peeter - a man who dreams of owning an Aston Martin, 
+adventuring around the world, and living the life of a spy. 
+However, Peeter is rather simple minded and tends to always take the easy way out in life - even if it means scamming someone. 
+Recently, he somehow acquired a file containing sensitive information about thousands of Estonian people's bank accounts 
+(usernames, passwords, ID card PIN codes). 
+While his phone, which contained the original file, has been confiscated and destroyed, 
+a copy of the file was also saved to Peeter's cloud-based account and needs to be deleted before Peeter can cause any real harm to anyone.
+Currently, it's known that Peeter's account username is "pets" (short form of Peeter) but his password is unknown. 
+Identify Peeter's password and help prevent harm to the wallets of thousands of Estonian people.
+                    </p>
+                </div>
+                <div class="manUA">
+                    <p>
+                        ua
+                    </p>
+                </div>    
+                <form id="frm5" onSubmit="return getinPu('frm5', 'ans5', 'demo5')" >
+                    <div class="manEE">
+                        <label for="fname">Sisestage parool:</label><br>
+                      </div>
+                      <div class="manENG">
+                          <label for="fname">Enter the password: </label><br>
+                      </div>
+                      <div class="manUA">
+                          <label for="fname">ua:</label><br>
+                      </div>
                       <input id="myInput5" type="text" name="fname" value="" /><br>
                     </form> 
                     <button id="myBtn" onclick="getinPu('frm5', 'ans5', 'demo5')">Check</button>
@@ -264,10 +425,37 @@
         </div>
         
             <div class="col-md-6">
-                <p>Peeter on mees, kes sooviks omada Aston Martini, seigelda ümber maailma ja elada spioonile sarnast seiklusrikast elu. Paraku on Peeter aga  on laisavõitu ja kipub elus minema alati lihtsama valiku teed - ka siis kui see tähendab kellegi petmist. Hiljuti on ta kuidagi enda valdusse saanud faili, mis sisaldab delikaatset teavet tuhandete Eesti inimeste pangakontode kohta (kasutajanimed, paroolid ID-kaartide PIN-koodid). Tema telefon, mis sisaldas originaalfaili on küll konfiskeeritud ja hävitatud, kuid koopia failist oli salvestatud lisaks telefonile ka Peetri pilvepõhisele kontole ning tuleb kustutada enne kui Peeter kellelegi reaalset kahju jõuab teha. Hetkel on teada, et Peetri konto kasutajanimi on „pets”, aga teadmata on tema parool. Tuvasta Peetri parool ja aita vältida kahju tuhandete Eesti inimeste rahakottidele.</p>
-                
+                <div class="manEE">
+                    <p>Peeter on mees, kes sooviks omada Aston Martini, seigelda ümber maailma ja elada spioonile sarnast seiklusrikast elu. Paraku on Peeter aga  on laisavõitu ja kipub elus minema alati lihtsama valiku teed - ka siis kui see tähendab kellegi petmist. Hiljuti on ta kuidagi enda valdusse saanud faili, mis sisaldab delikaatset teavet tuhandete Eesti inimeste pangakontode kohta (kasutajanimed, paroolid ID-kaartide PIN-koodid). Tema telefon, mis sisaldas originaalfaili on küll konfiskeeritud ja hävitatud, kuid koopia failist oli salvestatud lisaks telefonile ka Peetri pilvepõhisele kontole ning tuleb kustutada enne kui Peeter kellelegi reaalset kahju jõuab teha. Hetkel on teada, et Peetri konto kasutajanimi on „pets”, aga teadmata on tema parool. Tuvasta Peetri parool ja aita vältida kahju tuhandete Eesti inimeste rahakottidele.</p>
+                    </div>
+                    <div class="manENG">
+                        <p>
+                            Meet Peeter - a man who dreams of owning an Aston Martin, 
+                            adventuring around the world, and living the life of a spy. 
+                            However, Peeter is rather simple minded and tends to always take the easy way out in life - even if it means scamming someone. 
+                            Recently, he somehow acquired a file containing sensitive information about thousands of Estonian people's bank accounts 
+                            (usernames, passwords, ID card PIN codes). 
+                            While his phone, which contained the original file, has been confiscated and destroyed, 
+                            a copy of the file was also saved to Peeter's cloud-based account and needs to be deleted before Peeter can cause any real harm to anyone.
+                            Currently, it's known that Peeter's account username is "pets" (short form of Peeter) but his password is unknown. 
+                            Identify Peeter's password and help prevent harm to the wallets of thousands of Estonian people. 
+                        </p>
+                    </div>
+                    <div class="manUA">
+                        <p>
+                            ua
+                        </p>
+                    </div>    
                     <form id="fm6" onSubmit="return getinPu('fm6', 'ans6', 'demo6')" >
-                      <label for="fname">Sisestage parool:</label><br>
+                        <div class="manEE">
+                            <label for="fname">Sisestage parool:</label><br>
+                          </div>
+                          <div class="manENG">
+                              <label for="fname">Enter the password: </label><br>
+                          </div>
+                          <div class="manUA">
+                              <label for="fname">ua:</label><br>
+                          </div>
                       <input id="myInput6" type="text"  value="" /><br>
                     </form> 
                     <button id="myBtn" onclick="getinPu('fm6', 'ans6', 'demo6','mob3')">Check</button>
