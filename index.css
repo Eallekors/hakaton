@@ -55,6 +55,12 @@ h1, h2, h3 {
     background:#3780d6;;
     height: 3.5em;
 }
+#navENG,#navUA {
+    display: none;
+}
+.manENG,.manUA {
+    display:none;
+}
 #main-char{
     display: block;
     margin: 5vh auto 5vh auto;
