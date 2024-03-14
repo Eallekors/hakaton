@@ -105,7 +105,7 @@ function input(x, ansId, outID ,number , mob){
   function changePic(x){
     console.log(x)
     if (x == 'lukk1' || x == 'lukk2'){
-      document.getElementById(x).src='./img/10yo_boy_2 1.png';
+      document.getElementById(x).src='./img/10yo_boy_2.png';
     }
 
     if (x == 'lukk3' || x == 'lukk4'){
