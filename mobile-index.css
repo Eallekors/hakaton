@@ -16,12 +16,12 @@ body{
 #main-char-intro{
     margin: 5vh 10% 5vh 10%;
 }
-#play-btn{
+#play-btn, #rules-btn{
     width: 25vw;
     height: 6vh;
     padding: 1.75vh 4vw 1.75vh 4vw;
 }
-#play-btn:hover{
+#play-btn:hover, #rules-btn:hover{
     width: 24.5vw;
     height: 5.5vh;
 }

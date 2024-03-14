@@ -3,7 +3,7 @@
     padding:0;
     box-sizing:border-box;
 }
-body{
+body, button{
     font-size: 1.5vh;
     background: #f3fafc;
     color: #000000;
@@ -12,6 +12,7 @@ body{
 h1, h2, h3 {
     font-family: 'Lexend Zetta', sans-serif;
 }
+
 /*styling for navbar id*/
 #navbar{
     background:#3780d6;
@@ -68,26 +69,23 @@ h1, h2, h3 {
     text-align:center;
     margin: 5vh 25% 5vh 25%;
 }
-#play-btn{
+#play-btn, #rules-btn{
     display: block;
-    margin: 5vh auto 5vh auto;
+    margin: 2vh auto 2vh auto;
     background: #3780d6;
     color:#f0f0f0;
     border-radius: 10px;
     width: 10vw;
     height: 4vh;
+    padding-top: 1.25vh;
     text-decoration: none;
     text-align: center;
-    padding: 1vh 2.5vw 1vh 2.5vw;
+    vertical-align: center;
 }
-#play-btn:hover{
+#play-btn:hover, #rules-btn:hover{
     background: #80a7d6;
     width: 9.75vw;
     height: 3.75vh;
-}
-body{
-    background: #f3fafc;
-    color: #000000;
 }
 #main-content{
     min-height: 100vh;
@@ -114,13 +112,25 @@ footer{
     width: 20vw;
     margin: 0 40% 0 40%;
 }
+#rules{
+    display: none;
+}
+#rules-btn{
+    border: none;
+    padding-top: 0;
+}
 @media screen and (min-width: 501px) and (max-width: 1024px) {
-    #play-btn{
-        width: 15vw;
+    #play-btn, #rules-btn{
+        width: 25vw;
         height: 6vh;
-        padding: 1.5vh 3.75vw 1.5vh 3.75vw;
+        text-align: center;
+        vertical-align: center;
+        padding-top: 2vh;
     }
-    #play-btn:hover{
+    #rules-btn{
+        padding-top: 0;
+    }
+    #play-btn:hover, #rules-btn:hover{
         width: 14.5vw;
         height: 5.5vh;
     }
