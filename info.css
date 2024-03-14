@@ -14,9 +14,9 @@ body{
 #navbar{
     background:#3780d6;
     color:#f0f0f0;
-    overflow:auto;
+    overflow:hidden;
     position: sticky;
-    max-height: 4.5em;
+    height: 4.5em;
 }
 /*styling for anchors in navbar id*/
 #navbar a{
@@ -26,8 +26,9 @@ body{
 /*navbar id heading styling*/
 #navbar img{
     float:left;
-    max-height: 3.5em;
-    padding: 0.5em;
+    height: 3.5em;
+    margin: 0.5em;
+    padding-left: 1em;
 }
 /*styling for unordered lists in navbar id*/
 #navbar ul {
@@ -42,7 +43,7 @@ body{
 /*styling for anchor links in list items in unordered lists in navbar id*/
 #navbar ul li a{
     display:block;
-    padding:1em;
+    padding:1.5em;
     text-align:center;
 }
 /*styling for anchor links in hover in list items in unordered lists in navbar id and the current class*/
@@ -119,7 +120,7 @@ footer{
 #copyright:hover{
     color: #80a7d6;
 }
-.popup {
+.popup{
     display: none;
     position: absolute;
     bottom: 100%; /* Position above the footer */
