@@ -201,3 +201,25 @@ function language(cur) {
   }else return
 }
 
+function changeActive(x){
+
+  var element = document.querySelector(x);
+  //console.log(element)
+  element.classList.replace("dropdown-item active", "dropdown-item");
+ /* var element = document.querySelector(y);
+  element.classList.replace("dropdown-item active", "dropdown-item");*/
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var footer = document.getElementById('footer');
+  var popup = document.getElementById('popup');
+
+  footer.addEventListener('click', function() {
+      // Toggle the visibility of the popup
+      if (popup.style.display === 'block') {
+          popup.style.display = 'none';
+      } else {
+          popup.style.display = 'block';
+      }
+  });
+});

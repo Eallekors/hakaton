@@ -121,3 +121,24 @@ footer{
         height: 5.5vh;
     }
 }
+.popup {
+    display: none;
+    position: absolute;
+    bottom: 100%; /* Position above the footer */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3780d6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.popup-content {
+    font-size: 14px;
+}
+
+#footer {
+    position: relative;
+    cursor: pointer;
+}
