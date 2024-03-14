@@ -48,7 +48,7 @@ function input(x, ansId, outID ,number , mob){
   } else if (current == 'ENG'){
     document.getElementById(outID).innerHTML = "You broke the password. The password was " + document.getElementById(ansId).innerHTML;
   }else if (current == 'UA'){
-    document.getElementById(outID).innerHTML = "Правильний пароль:  " + document.getElementById(ansId).innerHTML;
+    document.getElementById(outID).innerHTML = "Так тримати! Ти взламав пароль " ;
   } else {
     document.getElementById(outID).innerHTML = "Murdsid parooli. Parool oli " + document.getElementById(ansId).innerHTML;
   }
@@ -72,7 +72,7 @@ function input(x, ansId, outID ,number , mob){
   } else if (current == 'ENG'){
     document.getElementById(outID).innerHTML = "You entered the wrong password";
   }else if (current == 'UA'){
-    document.getElementById(outID).innerHTML = "Не введено правильний пароль";
+    document.getElementById(outID).innerHTML = "Пароль непрвильний. Спробуй ще";
   } else {
     document.getElementById(outID).innerHTML = "Ei sisestanud õiget parooli";
   }
