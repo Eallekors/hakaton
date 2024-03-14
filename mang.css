@@ -58,7 +58,9 @@ h1, h2, h3 {
 #navbar ul li a{
     display:block;
     padding-top:1em;
-    padding-right: 0.5rem;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    padding-bottom:1em;
     text-align:center;
 }
 /*styling for anchor links in hover in list items in unordered lists in navbar id and the current class*/
