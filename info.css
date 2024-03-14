@@ -28,7 +28,7 @@ h1, h2, h3 {
 /*navbar id heading styling*/
 #navbar img{
     float:left;
-    height: 3.5em;
+    max-height: 3.5em;
 }
 /*styling for unordered lists in navbar id*/
 #navbar ul {
@@ -43,7 +43,7 @@ h1, h2, h3 {
 /*styling for anchor links in list items in unordered lists in navbar id*/
 #navbar ul li a{
     display:block;
-    padding:1.25em;
+    padding:1em;
     text-align:center;
 }
 /*styling for anchor links in hover in list items in unordered lists in navbar id and the current class*/
@@ -76,8 +76,15 @@ h1{
     background: #52a036;
     color: #f0f0f0;
 }
-.password-tips p, .password-tips h2{
+.password-tips p, .password-tips h2, .password-tips h3{
     padding: 2.5vh 10% 2.5vh 10%;
+}
+.password-tips h3{
+    font-size: 2vh;
+}
+.password-tips h2{
+    color: black;
+    font-size: 2.5vh;
 }
 #hamburger-menu{
     display: none;
@@ -129,4 +136,9 @@ footer{
 #footer {
     position: relative;
     cursor: pointer;
+}
+@media screen and (min-width: 501px) and (max-width: 1024px) {
+    h1{
+        font-size: 13vw;
+    }
 }
