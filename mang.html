@@ -114,10 +114,10 @@
             <div id="nav-buttons">
             <ul>
                 <li>
-                    <a href="index.html">UK Homepage</a>
+                    <a href="index.html">Головна сторінка</a>
                 </li>
                 <li>
-                    <a href="info.html">Password ABC</a>
+                    <a href="info.html">АВС паролів</a>
                 </li>
                 <li>
                    
@@ -129,7 +129,16 @@
     </header>
     <!-- level 1-->
     <div id="clue" class="container justify-content-center">
-        <h1>Level 1</h1>
+        <div class="manEE">
+            <h1>Level 1</h1>
+        </div>
+        <div class="manENG">
+            <h1>Level 1</h1>
+        </div>
+        <div class="manUA">
+            <h1>РІВЕНЬ 1</h1>
+        </div>
+        
         <div class="row">
             <div class="col-md-3">
                 <div class="image-container justify-content-center">
@@ -139,7 +148,11 @@
             </div>
             <div class="col-md-6">
                 <div class="manEE">
-                <p>Martin on 10-aastane rõõmsameelne poiss, kellel peagi on algamas koolivaheaeg. Koolivaheajal soovib ta ennast täielikult pühendada oma lemmik online mängude mängimisele. Kahjuks on ta unustanud oma konto parooli ja platvorm, millel ta mängib on üks väheseid, mis parooli unustamise korral seda taastada ei luba. Aita Martinil veeta saabuv vaheaeg rõõmsalt ja lõbusalt - tuvasta tema parool!</p>
+                <p>Martin on 10-aastane rõõmsameelne poiss, kellel peagi on algamas koolivaheaeg.
+                     Koolivaheajal soovib ta ennast täielikult pühendada oma lemmik online mängude mängimisele. 
+                     Kahjuks on ta unustanud oma konto parooli ja platvorm, millel ta mängib on üks väheseid, 
+                     mis parooli unustamise korral seda taastada ei luba. Aita Martinil veeta saabuv vaheaeg rõõmsalt ja lõbusalt -
+                      tuvasta tema parool!</p>
                 </div>
                 <div class="manENG">
                     <p>Martin is a cheerful 10-year-old boy who's school break is starting soon.
@@ -150,7 +163,7 @@
                         </p>
                 </div>
                 <div class="manUA">
-                    <p>UKRAINE</p>
+                    <p>Мартін - 10-річний веселий хлопчик, в якого незабаром почнуться канікули. Протягом канікул він хоче повністю присвятити себе своїм улюбленим онлайн-іграм. На жаль, він забув свій пароль до облікового запису, а платформа, на якій він грає, одна з декількох, яка не дозволяє відновити пароль у разі його забуття. Допоможіть Мартіну провести прийдешні канікули радісно та весело - вгадайте його пароль!</p>
                 </div>
                     <form id="frm1" onSubmit="return getinPu('frm1', 'ans1', 'demo1')" >
                     <div class="manEE">
@@ -160,12 +173,19 @@
                         <label for="fname">Enter the password:</label><br>
                     </div>
                     <div class="manUA">
-                        <label for="fname">Enter the password:</label><br>
+                        <label for="fname">Введіть пароль:</label><br>
                       </div>
                       <input id="myInput1" type="text" name="fname" value="" /><br>
                     </form> 
-                    <button id="myBtn" onclick="getinPu('frm1', 'ans1', 'demo1')">Check</button>
-                    
+                    <div class="manEE">
+                        <button id="myBtn" onclick="getinPu('frm1', 'ans1', 'demo1')">Kontrolli</button> 
+                    </div>
+                    <div class="manENG">
+                        <button id="myBtn" onclick="getinPu('frm1', 'ans1', 'demo1')">Check</button>
+                    </div>
+                    <div class="manUA">
+                    <button id="myBtn" onclick="getinPu('frm1', 'ans1', 'demo1')">Перевірте</button>
+                    </div>
                    <p id="ans1" style="display: none;">qwerty</p>
                     <p id="demo1"></p>
                   
@@ -180,7 +200,15 @@
     <!-- Mobile level 1-->
     <div id="mob1">
     <div id="mobileClue" class="container justify-content-center">
-        <h1>Level 1</h1>
+        <div class="manEE">
+            <h1>Level 1</h1>
+        </div>
+        <div class="manENG">
+            <h1>Level 1</h1>
+        </div>
+        <div class="manUA">
+            <h1>РІВЕНЬ 1</h1>
+        </div>
         <div class="row">
             <div class="col-5 col-sm-3">
                 <div class="image-container justify-content-center">
@@ -209,7 +237,7 @@
                             </p>
                     </div>
                     <div class="manUA">
-                        <p>UKRAINE</p>
+                        <p>Мартін - 10-річний веселий хлопчик, в якого незабаром почнуться канікули. Протягом канікул він хоче повністю присвятити себе своїм улюбленим онлайн-іграм. На жаль, він забув свій пароль до облікового запису, а платформа, на якій він грає, одна з декількох, яка не дозволяє відновити пароль у разі його забуття. Допоможіть Мартіну провести прийдешні канікули радісно та весело - вгадайте його пароль!</p>
                     </div>
                     <form id="fm2" onSubmit="return getinPu('fm2', 'ans2', 'demo2')" >
                         <div class="manEE">
@@ -219,12 +247,16 @@
                               <label for="fname">Enter the password:</label><br>
                           </div>
                           <div class="manUA">
-                            <label for="fname">Enter the password:</label><br>
-                          </div>
+                              <label for="fname">Введіть пароль:</label><br>
+                            </div>
                       <input id="myInput2" type="text"  value="" /><br>
                     </form> 
-                    <button id="myBtn" onclick="getinPu('fm2', 'ans2', 'demo2','mob1')">Check</button>
                     
+                        <button id="myBtn" onclick="getinPu('fm2', 'ans2', 'demo2','mob1')">
+                            <div class="manEE">Kontrolli</div>
+                            <div class="manENG">Check</div>
+                            <div class="manUA"> Перевірте</div>
+                        </button> 
                    <p id="ans2" style="display: none;">qwerty</p>
                     <p id="demo2"></p>
                   
@@ -235,7 +267,15 @@
 </div>
     <!-- level 2-->
     <div id="clue" class="container justify-content-center">
-        <h1>Level 2</h1>
+        <div class="manEE">
+            <h1>Level 2</h1>
+        </div>
+        <div class="manENG">
+            <h1>Level 2</h1>
+        </div>
+        <div class="manUA">
+            <h1>РІВЕНЬ 2</h1>
+        </div>
         <div class="row">
             <div class="col-md-3">
                 <div class="image-container justify-content-center">
@@ -260,7 +300,7 @@
                 </div>
                 <div class="manUA">
                     <p>
-                        ua
+                        Анетт - це 14-річна дівчина, якій її бабуся перед смертю залишила в своєму ноутбуці цінний скарб. На жаль, бабуся раптово померла і не встигла сказати Анетті пароль від свого ноутбуку. Вона лише колись згадувала, що зберігає в ноутбуці для Анетти особливо важливі речі. Допоможіть Анетті визначити втрачений пароль від ноутбука її бабусі!
                     </p>
                 </div>
                     <form id="frm3" onSubmit="return getinPu('frm3', 'ans3', 'demo3')" >
@@ -271,11 +311,13 @@
                         <label for="fname">Enter the password: </label><br>
                     </div>
                     <div class="manUA">
-                        <label for="fname">ua:</label><br>
+                        <label for="fname">Введіть пароль:</label><br>
                     </div>
                       <input id="myInput3" type="text" name="fname" value="" /><br>
                     </form> 
-                    <button id="myBtn" onclick="getinPu('frm3', 'ans3', 'demo3')">Check</button>
+                    <button id="myBtn" onclick="getinPu('frm3', 'ans3', 'demo3')"> <div class="manEE">Kontrolli</div>
+                        <div class="manENG">Check</div>
+                        <div class="manUA"> Перевірте</div></button>
                     
                    <p id="ans3" style="display: none;">Anette2010</p>
                     <p id="demo3"></p>
@@ -291,7 +333,15 @@
     <!-- Mobile level 2-->
     <div id="mob2">
     <div id="mobileClue" class="container justify-content-center">
-        <h1>Level 2</h1>
+        <div class="manEE">
+            <h1>Level 2</h1>
+        </div>
+        <div class="manENG">
+            <h1>Level 2</h1>
+        </div>
+        <div class="manUA">
+            <h1>РІВЕНЬ 2</h1>
+        </div>
         <div class="row">
             <div class="col-5 col-sm-3">
                 <div class="image-container justify-content-center">
@@ -324,7 +374,7 @@
                     </div>
                     <div class="manUA">
                         <p>
-                            ua
+                            Анетт - це 14-річна дівчина, якій її бабуся перед смертю залишила в своєму ноутбуці цінний скарб. На жаль, бабуся раптово померла і не встигла сказати Анетті пароль від свого ноутбуку. Вона лише колись згадувала, що зберігає в ноутбуці для Анетти особливо важливі речі. Допоможіть Анетті визначити втрачений пароль від ноутбука її бабусі!
                         </p>
                     </div>
                     <form id="fm4" onSubmit="return getinPu('fm4', 'ans4', 'demo4')" >
@@ -335,11 +385,13 @@
                               <label for="fname">Enter the password: </label><br>
                           </div>
                           <div class="manUA">
-                              <label for="fname">ua:</label><br>
+                              <label for="fname">Введіть пароль:</label><br>
                           </div>
                       <input id="myInput4" type="text"  value="" /><br>
                     </form> 
-                    <button id="myBtn" onclick="getinPu('fm4', 'ans4', 'demo4','mob2')">Check</button>
+                    <button id="myBtn" onclick="getinPu('fm4', 'ans4', 'demo4','mob2')"><div class="manEE">Kontrolli</div>
+                        <div class="manENG">Check</div>
+                        <div class="manUA"> Перевірте</div></button>
                     
                    <p id="ans4" style="display: none;">Anette2010</p>
                     <p id="demo4"></p>
@@ -351,7 +403,15 @@
 </div>
     <!-- level 3-->
     <div id="clue" class="container justify-content-center">
-        <h1>Level 3</h1>
+        <div class="manEE">
+            <h1>Level 3</h1>
+        </div>
+        <div class="manENG">
+            <h1>Level 3</h1>
+        </div>
+        <div class="manUA">
+            <h1>РІВЕНЬ 3</h1>
+        </div>
         <div class="row">
             <div class="col-md-3">
                 <div class="image-container justify-content-center">
@@ -378,7 +438,12 @@ Identify Peeter's password and help prevent harm to the wallets of thousands of 
                 </div>
                 <div class="manUA">
                     <p>
-                        ua
+                        Зустрічайте Пітера - чоловіка, який мріє жити життям шпигуна таким як у James Bond. 
+Втім, Пітер досить простодушний і схильний завжди обирати найлегший шлях у житті - навіть якщо це означає обдурити когось. 
+Нещодавно він якимось чином отримав файл, що містить конфіденційну інформацію про банківські рахунки тисяч естонців (імена користувачів, паролі, пін-коди посвідчень особи). 
+Його телефон, який містив оригінал файлу, був конфіскований і знищений, 
+копія файлу також була збережена в хмарному обліковому записі Пітера, і її необхідно видалити, перш ніж Пітер зможе завдати комусь реальної шкоди.
+З'ясуйте пароль Пітера і допоможіть запобігти шкоді для гаманців тисяч естонців.
                     </p>
                 </div>    
                 <form id="frm5" onSubmit="return getinPu('frm5', 'ans5', 'demo5')" >
@@ -389,11 +454,13 @@ Identify Peeter's password and help prevent harm to the wallets of thousands of 
                           <label for="fname">Enter the password: </label><br>
                       </div>
                       <div class="manUA">
-                          <label for="fname">ua:</label><br>
+                          <label for="fname">Введіть пароль:</label><br>
                       </div>
                       <input id="myInput5" type="text" name="fname" value="" /><br>
                     </form> 
-                    <button id="myBtn" onclick="getinPu('frm5', 'ans5', 'demo5')">Check</button>
+                    <button id="myBtn" onclick="getinPu('frm5', 'ans5', 'demo5')"><div class="manEE">Kontrolli</div>
+                        <div class="manENG">Check</div>
+                        <div class="manUA"> Перевірте</div></button>
                     
                    <p id="ans5" style="display: none;">JamesBond007</p>
                     <p id="demo5"></p>
@@ -409,7 +476,15 @@ Identify Peeter's password and help prevent harm to the wallets of thousands of 
     <!-- Mobile level 3-->
     <div id="mob3">
     <div id="mobileClue" class="container justify-content-center">
-        <h1>Level 3</h1>
+        <div class="manEE">
+            <h1>Level 3</h1>
+        </div>
+        <div class="manENG">
+            <h1>Level 3</h1>
+        </div>
+        <div class="manUA">
+            <h1>РІВЕНЬ 3</h1>
+        </div>
         <div class="row">
             <div class="col-5 col-sm-3">
                 <div class="image-container justify-content-center">
@@ -444,7 +519,12 @@ Identify Peeter's password and help prevent harm to the wallets of thousands of 
                     </div>
                     <div class="manUA">
                         <p>
-                            ua
+                            Зустрічайте Пітера - чоловіка, який мріє жити життям шпигуна таким як у James Bond. 
+    Втім, Пітер досить простодушний і схильний завжди обирати найлегший шлях у житті - навіть якщо це означає обдурити когось. 
+    Нещодавно він якимось чином отримав файл, що містить конфіденційну інформацію про банківські рахунки тисяч естонців (імена користувачів, паролі, пін-коди посвідчень особи). 
+    Його телефон, який містив оригінал файлу, був конфіскований і знищений, 
+    копія файлу також була збережена в хмарному обліковому записі Пітера, і її необхідно видалити, перш ніж Пітер зможе завдати комусь реальної шкоди.
+    З'ясуйте пароль Пітера і допоможіть запобігти шкоді для гаманців тисяч естонців.
                         </p>
                     </div>    
                     <form id="fm6" onSubmit="return getinPu('fm6', 'ans6', 'demo6')" >
@@ -455,11 +535,13 @@ Identify Peeter's password and help prevent harm to the wallets of thousands of 
                               <label for="fname">Enter the password: </label><br>
                           </div>
                           <div class="manUA">
-                              <label for="fname">ua:</label><br>
+                              <label for="fname">Введіть пароль:</label><br>
                           </div>
                       <input id="myInput6" type="text"  value="" /><br>
                     </form> 
-                    <button id="myBtn" onclick="getinPu('fm6', 'ans6', 'demo6','mob3')">Check</button>
+                    <button id="myBtn" onclick="getinPu('fm6', 'ans6', 'demo6','mob3')"><div class="manEE">Kontrolli</div>
+                        <div class="manENG">Check</div>
+                        <div class="manUA"> Перевірте</div></button></button>
                     
                    <p id="ans6" style="display: none;">JamesBond007</p>
                     <p id="demo6"></p>
